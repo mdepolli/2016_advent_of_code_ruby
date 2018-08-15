@@ -1,6 +1,6 @@
-require_relative 'block_walker/walker'
+require_relative 'grid_walker/walker'
 
-class BlockWalker
+class GridWalker
   def initialize(data_origin = './input.txt')
     @data = if File.exist?(data_origin)
       File.read(data_origin)
