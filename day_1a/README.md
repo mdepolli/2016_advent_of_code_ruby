@@ -1,5 +1,7 @@
 ## 2016 Advent of Code - Day 1a
 
+### The problem
+
 You're airdropped near Easter Bunny Headquarters in a city somewhere. "Near", unfortunately, is as close as you can get - the instructions on the Easter Bunny Recruiting Document the Elves intercepted start here, and nobody had time to work them out further.
 
 The Document indicates that you should start at the given coordinates (where you just landed) and face North. Then, follow the provided sequence: either turn left (L) or right (R) 90 degrees, then walk forward the given number of blocks, ending at a new intersection.
@@ -15,3 +17,9 @@ For example:
 How many blocks away is Easter Bunny HQ?
 
 More info at: [https://adventofcode.com/2016/day/1](https://adventofcode.com/2016/day/1)
+
+### How to run the tests
+
+```shell
+$ ruby test.rb
+```
