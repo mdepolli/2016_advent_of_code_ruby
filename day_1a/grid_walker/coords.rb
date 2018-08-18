@@ -1,6 +1,8 @@
 require_relative 'direction'
 
-# `point` is a 3-element array with direction, x coordinate, y coordinate
+# This class performs operations with individual points in the grid.
+# The only parameter is a 3-element array with:
+# direction, x coordinate, y coordinate.
 class Coords
   def initialize(point)
     (@direction, @x, @y) = point

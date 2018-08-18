@@ -1,5 +1,8 @@
 require_relative 'grid_walker/walker'
 
+# This class serves as an API for the rest of the application. Other than
+# calling the main runner class (Walker), it only performs data parsing
+# to get the input ready to be processed.
 class GridWalker
   def initialize(file_or_string = './input.txt')
     import_data(file_or_string)

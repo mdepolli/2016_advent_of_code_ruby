@@ -1,5 +1,8 @@
 require_relative 'coords'
 
+# This is the main runner class of the application. The only public method,
+# `run`, processes the dataset and calculates the distance between the final
+# point and the starting point.
 class Walker
   STARTING_POINT = [:north, 0, 0].freeze
 
