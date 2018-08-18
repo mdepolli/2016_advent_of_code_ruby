@@ -1,14 +1,14 @@
 require_relative 'coords'
 
 class Walker
-  STARTING_POINT = [:north, 0, 0]
+  STARTING_POINT = [:north, 0, 0].freeze
 
   def initialize(data)
     @data = data
   end
 
   def run
-    (direction, x, y) = @data.reduce(STARTING_POINT) do |prev_point, current_move|
+    (_direction, x, y) = @data.reduce(STARTING_POINT) do |prev_point, current_move|
       walk_from_point(prev_point, current_move)
     end
     calculate_distance(x, y)

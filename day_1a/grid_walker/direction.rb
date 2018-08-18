@@ -1,5 +1,5 @@
 class Direction
-  DIRECTIONS = {east: 0, north: 1, west: 2, south: 3}
+  DIRECTIONS = { east: 0, north: 1, west: 2, south: 3 }.freeze
 
   # `current` is one of %i(east north west south)
   # `turn` is one of %w(L R)
