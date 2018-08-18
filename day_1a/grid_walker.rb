@@ -23,6 +23,10 @@ class GridWalker
   end
 
   def treat_data
-    @data = @data.split(', ').map(&:strip)
+    @data = @data.split(', ').map(&:strip).map { |move| parse_move(move) }
+  end
+
+  def parse_move(move)
+    move.match(/([LR])(\d*)/).captures
   end
 end
