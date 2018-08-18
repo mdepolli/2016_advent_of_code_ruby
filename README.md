@@ -21,5 +21,5 @@ More info at: [https://adventofcode.com/2016/day/1](https://adventofcode.com/201
 ### How to run the tests
 
 ```shell
-$ ruby test.rb
+$ ruby day_1a/test.rb
 ```
